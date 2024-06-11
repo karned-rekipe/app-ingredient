@@ -1,0 +1,14 @@
+.shape {
+    height: 0;
+    width: 0;
+    border-bottom: 30px solid black;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+.arrow {
+    height: 0;
+    width: 0;
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid black;
+    border-right: 20px solid transparent;
+}
