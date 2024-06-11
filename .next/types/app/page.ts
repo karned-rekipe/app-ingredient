@@ -1,4 +1,4 @@
-// File: /Users/maleho/Documents/github/koden/karden/app-ingredient/app/page.tsx
+// File: /Users/maleho/dev/koden/karden/app-ingredient/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
