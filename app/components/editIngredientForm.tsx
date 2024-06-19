@@ -5,8 +5,8 @@
 import { useState } from 'react';
 
 interface Ingredient {
-  id: number;
-  name: string;
+  _id: string;
+  label: string;
 }
 
 interface EditIngredientFormProps {
@@ -15,19 +15,19 @@ interface EditIngredientFormProps {
 }
 
 const EditIngredientForm: React.FC<EditIngredientFormProps> = ({ ingredient, onUpdateIngredient }) => {
-  const [name, setName] = useState(ingredient.name);
+  const [label, setLabel] = useState(ingredient.label);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name.trim()) return;
-    const updatedIngredient: Ingredient = { ...ingredient, name };
+    if (!label.trim()) return;
+    const updatedIngredient: Ingredient = { ...ingredient, label};
     onUpdateIngredient(updatedIngredient);
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-      <button type="submit">Update</button>
+      <input type="text" value={label} onChange={(e) => setLabel(e.target.value)} />
+      <button type="submit">_</button>
     </form>
   );
 };
